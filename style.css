@@ -924,3 +924,55 @@ button[type="submit"]:hover {
         padding: 10px;
     }
 }
+
+/* Blogs Preview Section */
+.blogs-preview {
+    text-align: center;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.blogs-preview p {
+    font-size: 1.2em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.view-all-blogs {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: all 0.3s ease;
+    border: 2px solid #007bff;
+}
+
+.view-all-blogs:hover {
+    background: transparent;
+    color: #007bff;
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+    .blogs-preview {
+        margin: 20px 15px;
+        padding: 30px 15px;
+    }
+
+    .blogs-preview p {
+        font-size: 1.1em;
+    }
+
+    .view-all-blogs {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
