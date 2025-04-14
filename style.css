@@ -809,3 +809,95 @@ button[type="submit"]:hover {
     background-color: #f8f9fa;
     border-radius: 8px;
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Navigation */
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    /* Home Section */
+    .home-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .home-text h1 {
+        font-size: 2em;
+    }
+
+    .home-image {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .profile-image {
+        max-width: 200px;
+        height: auto;
+    }
+
+    /* Blog Section */
+    .blogs-container {
+        padding: 20px;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .blog-post {
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-info, 
+    .contact-form {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+    }
+
+    /* AdSense Responsive */
+    .ad-container {
+        padding: 10px;
+        margin: 10px auto;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .home-text h1 {
+        font-size: 1.8em;
+    }
+
+    .tagline {
+        font-size: 1em;
+    }
+
+    .blog-content h2 {
+        font-size: 1.2em;
+    }
+
+    .contact-container h1 {
+        font-size: 1.8em;
+    }
+}
