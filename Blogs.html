@@ -7,192 +7,6 @@
     <title>Blogs - Prahatish Sathyamurthy</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        /* Blog Post Styles */
-        .blog-post {
-            background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            margin-bottom: 3rem;
-            transition: transform 0.3s ease;
-        }
-        
-        .blog-post:hover {
-            transform: translateY(-5px);
-        }
-        
-        .blog-image {
-            width: 100%;
-            height: 300px;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-        }
-        
-        .blog-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-        
-        .blog-post:hover .blog-image img {
-            transform: scale(1.05);
-        }
-        
-        .blog-content {
-            padding: 2rem;
-        }
-        
-        .blog-content h2 {
-            font-size: 2rem;
-            color: #2c3e50;
-            margin-bottom: 1rem;
-            line-height: 1.3;
-        }
-        
-        .blog-meta {
-            display: flex;
-            gap: 1.5rem;
-            margin-bottom: 1rem;
-            color: #666;
-        }
-        
-        .blog-meta span {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        
-        .blog-meta i {
-            color: #007bff;
-        }
-        
-        .blog-excerpt {
-            color: #666;
-            line-height: 1.6;
-            font-size: 1.1rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .read-more {
-            display: inline-block;
-            padding: 0.8rem 1.5rem;
-            background: #007bff;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: 2px solid #007bff;
-            cursor: pointer;
-        }
-        
-        .read-more:hover {
-            background: transparent;
-            color: #007bff;
-        }
-        
-        /* Full Article Styles */
-        .full-article {
-            max-width: 800px;
-            margin: 3rem auto;
-            padding: 2.5rem;
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            display: none;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-        
-        .full-article.active {
-            display: block;
-            opacity: 1;
-        }
-        
-        .full-article h2 {
-            font-size: 2.5rem;
-            color: #2c3e50;
-            margin-bottom: 1.5rem;
-            line-height: 1.3;
-        }
-        
-        .article-meta {
-            display: flex;
-            gap: 2rem;
-            margin-bottom: 2rem;
-            color: #666;
-            font-size: 1.1rem;
-        }
-        
-        .article-content {
-            color: #333;
-            line-height: 1.8;
-            font-size: 1.1rem;
-        }
-        
-        .article-content h3 {
-            font-size: 1.8rem;
-            color: #2c3e50;
-            margin: 2rem 0 1rem;
-        }
-        
-        .article-content ul {
-            margin: 1.5rem 0;
-            padding-left: 2rem;
-        }
-        
-        .article-content li {
-            margin-bottom: 1rem;
-        }
-        
-        .article-content strong {
-            color: #2c3e50;
-        }
-        
-        @media (max-width: 768px) {
-            .blog-image {
-                height: 200px;
-            }
-            
-            .blog-content h2 {
-                font-size: 1.5rem;
-            }
-            
-            .full-article {
-                padding: 1.5rem;
-                margin: 2rem 1rem;
-            }
-            
-            .full-article h2 {
-                font-size: 2rem;
-            }
-        }
-
-        /* Additional Styles for Blog Section */
-        #blogs {
-            padding-top: 80px;
-            min-height: 100vh;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-        }
-
-        .blogs-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        .blogs-container h1 {
-            text-align: center;
-            font-size: 3rem;
-            color: #2c3e50;
-            margin-bottom: 3rem;
-        }
-    </style>
 </head>
 <body>
     <div class="navbar">
@@ -209,7 +23,6 @@
         <div class="blogs-container">
             <h1>My Blogs</h1>
             <div class="blog-grid">
-                <!-- AI Article -->
                 <article class="blog-post">
                     <div class="blog-image">
                         <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="AI Writing Assistant">
@@ -217,51 +30,51 @@
                     <div class="blog-content">
                         <h2>The Algorithm's Muse: How AI is Transforming Content Writing</h2>
                         <div class="blog-meta">
-                            <span class="date"><i class="far fa-calendar"></i> March 15, 2024</span>
-                            <span class="category"><i class="far fa-folder"></i> Technology</span>
+                            <span class="date">
+                                <i class="far fa-calendar"></i>
+                                April 14, 2024
+                            </span>
+                            <span class="category">
+                                <i class="far fa-folder"></i>
+                                Technology
+                            </span>
                         </div>
-                        <p class="blog-excerpt">The world of content writing is experiencing a seismic shift, and at the epicenter is artificial intelligence (AI). No longer a futuristic fantasy, AI writing tools are rapidly becoming commonplace, altering how we create, optimize, and consume content. This isn't just about automating tedious tasks; AI is fundamentally changing the landscape of content creation, presenting both exciting opportunities and complex challenges.</p>
-                        <a href="#" class="read-more" onclick="toggleArticle(event)">Read More</a>
+                        <div class="blog-preview">
+                            <p class="blog-excerpt">The world of content writing is experiencing a seismic shift, and at the epicenter is artificial intelligence (AI). No longer a futuristic fantasy, AI writing tools are rapidly becoming commonplace, altering how we create, optimize, and consume content. This isn't just about automating tedious tasks; AI is fundamentally changing the landscape of content creation, presenting both exciting opportunities and complex challenges.</p>
+                            <a href="#" class="read-more" onclick="toggleArticle(event)">Read More</a>
+                        </div>
+                        <div class="article-content" style="display: none;">
+                            <p>The world of content writing is experiencing a seismic shift, and at the epicenter is artificial intelligence (AI). No longer a futuristic fantasy, AI writing tools are rapidly becoming commonplace, altering how we create, optimize, and consume content. This isn't just about automating tedious tasks; AI is fundamentally changing the landscape of content creation, presenting both exciting opportunities and complex challenges.</p>
+
+                            <h3>The Rise of the AI Writing Assistant</h3>
+                            <p>AI writing tools are powered by sophisticated algorithms, trained on vast datasets of text and code. These tools can generate a wide range of content, from short-form social media posts to long-form articles and even creative pieces. Here's how AI is transforming the content writing process:</p>
+                            
+                            <ul>
+                                <li><strong>Increased Efficiency and Productivity:</strong> AI can automate time-consuming tasks like generating outlines, rewriting existing content, and crafting variations for A/B testing.</li>
+                                <li><strong>Enhanced Content Quality:</strong> AI can help improve grammar, style, and clarity, ensuring content is polished and professional.</li>
+                                <li><strong>Personalized Content at Scale:</strong> AI enables personalized content creation at a scale previously unimaginable.</li>
+                                <li><strong>Breaking Down Language Barriers:</strong> AI-powered translation tools are becoming increasingly sophisticated.</li>
+                                <li><strong>Idea Generation and Content Research:</strong> AI can analyze trends, keywords, and competitor content to provide writers with fresh ideas.</li>
+                            </ul>
+
+                            <h3>Beyond Automation: The Creative Potential of AI</h3>
+                            <p>While some fear AI will replace human writers, the reality is more nuanced. AI is a powerful tool, but it's still just that – a tool. Human creativity, critical thinking, and emotional intelligence remain essential for crafting truly compelling and impactful content.</p>
+
+                            <h3>The Challenges and Ethical Considerations</h3>
+                            <p>The rise of AI in content writing also presents significant challenges:</p>
+                            <ul>
+                                <li><strong>Bias and Fairness:</strong> AI algorithms are trained on existing data, which can reflect societal biases.</li>
+                                <li><strong>Plagiarism and Originality:</strong> Ensuring the originality of AI-generated content is crucial.</li>
+                                <li><strong>The Human Element:</strong> While AI can automate many tasks, it can't replicate the empathy and creativity of human writing.</li>
+                                <li><strong>Job Displacement Concerns:</strong> As AI becomes more sophisticated, there are concerns about potential displacement of human writers.</li>
+                            </ul>
+
+                            <h3>The Future of Content Writing is Human+AI</h3>
+                            <p>The future of content writing lies in a collaborative approach, leveraging the strengths of both humans and AI. By embracing AI as a powerful tool, content writers can enhance their productivity, expand their creative capabilities, and deliver more engaging and impactful content than ever before.</p>
+                            <a href="#" class="read-more" onclick="toggleArticle(event)">Show Less</a>
+                        </div>
                     </div>
                 </article>
-
-                <!-- Full Article Content -->
-                <div class="full-article" id="full-article">
-                    <h2>The Algorithm's Muse: How AI is Transforming Content Writing</h2>
-                    <div class="article-meta">
-                        <span class="date"><i class="far fa-calendar"></i> March 15, 2024</span>
-                        <span class="category"><i class="far fa-folder"></i> Technology</span>
-                    </div>
-                    <div class="article-content">
-                        <p>The world of content writing is experiencing a seismic shift, and at the epicenter is artificial intelligence (AI). No longer a futuristic fantasy, AI writing tools are rapidly becoming commonplace, altering how we create, optimize, and consume content. This isn't just about automating tedious tasks; AI is fundamentally changing the landscape of content creation, presenting both exciting opportunities and complex challenges.</p>
-
-                        <h3>The Rise of the AI Writing Assistant</h3>
-                        <p>AI writing tools are powered by sophisticated algorithms, trained on vast datasets of text and code. These tools can generate a wide range of content, from short-form social media posts to long-form articles and even creative pieces. Here's how AI is transforming the content writing process:</p>
-                        
-                        <ul>
-                            <li><strong>Increased Efficiency and Productivity:</strong> AI can automate time-consuming tasks like generating outlines, rewriting existing content, and crafting variations for A/B testing.</li>
-                            <li><strong>Enhanced Content Quality:</strong> AI can help improve grammar, style, and clarity, ensuring content is polished and professional.</li>
-                            <li><strong>Personalized Content at Scale:</strong> AI enables personalized content creation at a scale previously unimaginable.</li>
-                            <li><strong>Breaking Down Language Barriers:</strong> AI-powered translation tools are becoming increasingly sophisticated.</li>
-                            <li><strong>Idea Generation and Content Research:</strong> AI can analyze trends, keywords, and competitor content to provide writers with fresh ideas.</li>
-                        </ul>
-
-                        <h3>Beyond Automation: The Creative Potential of AI</h3>
-                        <p>While some fear AI will replace human writers, the reality is more nuanced. AI is a powerful tool, but it's still just that – a tool. Human creativity, critical thinking, and emotional intelligence remain essential for crafting truly compelling and impactful content.</p>
-
-                        <h3>The Challenges and Ethical Considerations</h3>
-                        <p>The rise of AI in content writing also presents significant challenges:</p>
-                        <ul>
-                            <li><strong>Bias and Fairness:</strong> AI algorithms are trained on existing data, which can reflect societal biases.</li>
-                            <li><strong>Plagiarism and Originality:</strong> Ensuring the originality of AI-generated content is crucial.</li>
-                            <li><strong>The Human Element:</strong> While AI can automate many tasks, it can't replicate the empathy and creativity of human writing.</li>
-                            <li><strong>Job Displacement Concerns:</strong> As AI becomes more sophisticated, there are concerns about potential displacement of human writers.</li>
-                        </ul>
-
-                        <h3>The Future of Content Writing is Human+AI</h3>
-                        <p>The future of content writing lies in a collaborative approach, leveraging the strengths of both humans and AI. By embracing AI as a powerful tool, content writers can enhance their productivity, expand their creative capabilities, and deliver more engaging and impactful content than ever before.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -273,19 +86,21 @@
     <script>
         function toggleArticle(event) {
             event.preventDefault();
-            const fullArticle = document.getElementById('full-article');
+            const blogPost = event.target.closest('.blog-post');
+            const preview = blogPost.querySelector('.blog-preview');
+            const fullContent = blogPost.querySelector('.article-content');
             const readMoreLink = event.target;
             
-            if (fullArticle.classList.contains('active')) {
-                fullArticle.classList.remove('active');
-                readMoreLink.textContent = 'Read More';
-                // Smooth scroll to the top of the blog post
-                document.querySelector('.blog-post').scrollIntoView({ behavior: 'smooth' });
-            } else {
-                fullArticle.classList.add('active');
+            if (preview.style.display !== 'none') {
+                preview.style.display = 'none';
+                fullContent.style.display = 'block';
                 readMoreLink.textContent = 'Show Less';
-                // Smooth scroll to the full article
-                fullArticle.scrollIntoView({ behavior: 'smooth' });
+                fullContent.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                preview.style.display = 'block';
+                fullContent.style.display = 'none';
+                readMoreLink.textContent = 'Read More';
+                preview.scrollIntoView({ behavior: 'smooth' });
             }
         }
     </script>
