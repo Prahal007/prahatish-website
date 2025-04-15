@@ -99,7 +99,7 @@
                         <div class="blog-meta">
                             <span class="date">
                                 <i class="far fa-calendar"></i>
-                                April 14, 2024
+                                April 15, 2024
                             </span>
                             <span class="category">
                                 <i class="far fa-folder"></i>
@@ -158,7 +158,7 @@
             const fullContent = blogPost.querySelector('.article-content');
             const readMoreLink = event.target;
             
-            if (preview.style.display !== 'none') {
+            if (fullContent.style.display === 'none') {
                 preview.style.display = 'none';
                 fullContent.style.display = 'block';
                 readMoreLink.textContent = 'Show Less';
@@ -170,6 +170,14 @@
                 preview.scrollIntoView({ behavior: 'smooth' });
             }
         }
+
+        // Ensure all article-content divs are initially hidden
+        document.addEventListener('DOMContentLoaded', function() {
+            const articleContents = document.querySelectorAll('.article-content');
+            articleContents.forEach(content => {
+                content.style.display = 'none';
+            });
+        });
     </script>
 </body>
 </html>
