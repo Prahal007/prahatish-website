@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="google-site-verification" content="BdggSzAPu0mIn9MNPAJq2wXGtP_gVF_-qY9NPUPXfdI" />
         <title>Prahatish Sathyamurthy</title>
         <!-- Meta Tags -->
@@ -47,6 +47,9 @@
     </head>
 <body>
     <div class="navbar">
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
         <ul>
             <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
             <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
@@ -149,5 +152,51 @@
     <footer>
         <p>© 2025 Prahatish Sathyamurthy. All rights reserved.</p>
     </footer>
+
+    <script>
+        // Email sending function
+        function sendEmail(e) {
+            e.preventDefault();
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var message = document.getElementById('message').value;
+            
+            var mailtoLink = 'mailto:prahatish0711@gmail.com'
+                + '?subject=' + encodeURIComponent('Contact Form Message from ' + name)
+                + '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\nMessage:\n' + message);
+            
+            window.location.href = mailtoLink;
+        }
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navbarUl = document.querySelector('.navbar ul');
+            const navLinks = document.querySelectorAll('.navbar a');
+
+            menuToggle.addEventListener('click', function() {
+                navbarUl.classList.toggle('active');
+                menuToggle.setAttribute('aria-expanded', 
+                    menuToggle.getAttribute('aria-expanded') === 'true' ? 'false' : 'true'
+                );
+            });
+
+            // Close menu when clicking a link
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navbarUl.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!event.target.closest('.navbar')) {
+                    navbarUl.classList.remove('active');
+                    menuToggle.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
