@@ -87,7 +87,21 @@
                             </div>
                             
                             <div class="comments-section">
-                                <div id="disqus_thread"></div>
+                                <h3>Comments</h3>
+                                <div class="comment-form">
+                                    <form onsubmit="submitComment(event, 'tesla-apple')">
+                                        <div class="form-group">
+                                            <input type="text" id="name-tesla" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea id="comment-tesla" placeholder="Your Comment" required></textarea>
+                                        </div>
+                                        <button type="submit" class="submit-comment">Post Comment</button>
+                                    </form>
+                                </div>
+                                <div class="comments-list" id="comments-tesla-apple">
+                                    <!-- Comments will be displayed here -->
+                                </div>
                             </div>
                             
                             <a href="#" class="read-more" onclick="toggleArticle(event)">Show Less</a>
@@ -142,8 +156,23 @@
 
                             <h3>The Future of Content Writing is Human+AI</h3>
                             <p>The future of content writing lies in a collaborative approach, leveraging the strengths of both humans and AI. By embracing AI as a powerful tool, content writers can enhance their productivity, expand their creative capabilities, and deliver more engaging and impactful content than ever before.</p>
+                            
                             <div class="comments-section">
-                                <div id="disqus_thread_2"></div>
+                                <h3>Comments</h3>
+                                <div class="comment-form">
+                                    <form onsubmit="submitComment(event, 'ai-writing')">
+                                        <div class="form-group">
+                                            <input type="text" id="name-ai" placeholder="Your Name" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <textarea id="comment-ai" placeholder="Your Comment" required></textarea>
+                                        </div>
+                                        <button type="submit" class="submit-comment">Post Comment</button>
+                                    </form>
+                                </div>
+                                <div class="comments-list" id="comments-ai-writing">
+                                    <!-- Comments will be displayed here -->
+                                </div>
                             </div>
                             
                             <a href="#" class="read-more" onclick="toggleArticle(event)">Show Less</a>
@@ -187,22 +216,32 @@
             });
         });
 
-        // Disqus Configuration
-        var disqus_config = function () {
-            this.page.url = 'https://prahatishs.netlify.app/blogs';
-            this.page.identifier = window.location.pathname;
-        };
-        
-        (function() {
-            var d = document, s = d.createElement('script');
-            s.src = 'https://prahatish.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-
-        // Email sending function
-        function sendEmail(e) {
-            // ... existing code ...
+        // Comment submission function
+        function submitComment(event, articleId) {
+            event.preventDefault();
+            const nameInput = document.getElementById(`name-${articleId === 'tesla-apple' ? 'tesla' : 'ai'}`);
+            const commentInput = document.getElementById(`comment-${articleId === 'tesla-apple' ? 'tesla' : 'ai'}`);
+            const commentsList = document.getElementById(`comments-${articleId}`);
+            
+            const name = nameInput.value.trim();
+            const comment = commentInput.value.trim();
+            const date = new Date().toLocaleDateString();
+            
+            if (name && comment) {
+                const commentElement = document.createElement('div');
+                commentElement.className = 'comment';
+                commentElement.innerHTML = `
+                    <div class="comment-header">
+                        <strong>${name}</strong>
+                        <span class="comment-date">${date}</span>
+                    </div>
+                    <div class="comment-content">${comment}</div>
+                `;
+                
+                commentsList.insertBefore(commentElement, commentsList.firstChild);
+                nameInput.value = '';
+                commentInput.value = '';
+            }
         }
     </script>
 </body>
