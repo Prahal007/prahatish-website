@@ -679,7 +679,7 @@ button[type="submit"]:hover {
 
 .blog-image {
     width: 100%;
-    height: 200px;
+    height: 300px;
     overflow: hidden;
 }
 
@@ -687,6 +687,7 @@ button[type="submit"]:hover {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     transition: transform 0.3s ease;
 }
 
@@ -1474,16 +1475,14 @@ button[type="submit"]:hover {
     width: 100%;
     height: 400px;
     position: relative;
+    overflow: hidden;
 }
 
 #single-blog .blog-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-#single-blog .blog-content {
-    padding: 2rem 1rem;
+    object-position: center;
 }
 
 #single-blog h2 {
