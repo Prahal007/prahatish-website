@@ -873,14 +873,17 @@ button[type="submit"]:hover {
 }
 
 .article-content {
-    display: none;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #333;
+    padding: 2rem;
+    display: block;
+    visibility: visible;
 }
 
 .article-content.visible {
     display: block;
-    opacity: 1;
+    visibility: visible;
 }
 
 .blog-preview.hidden {
@@ -1468,7 +1471,8 @@ button[type="submit"]:hover {
     background: white;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    overflow: visible;
+    margin-top: 2rem;
 }
 
 #single-blog .blog-image {
@@ -1517,6 +1521,9 @@ button[type="submit"]:hover {
     font-size: 1.2rem;
     line-height: 1.8;
     color: #333;
+    padding: 2rem;
+    display: block;
+    visibility: visible;
 }
 
 #single-blog .article-content p {
