@@ -25,47 +25,196 @@
     <meta property="twitter:image" content="https://prahatish.com/images/Profile.jpeg">
     
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="navbar">
+        <ul>
+            <li><a href="Index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="About.html"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="Blogs.html"><i class="fas fa-blog"></i> Blogs</a></li>
+            <li><a href="Contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </div>
 
     <section id="about">
-        <h1>About Me</h1>
-        <div class="about-content">
-            <div class="about-text">
-                <h2>Prahatish Sathyamurthy</h2>
-                <p class="tagline">Coder | Aviation Nerd | Building with Code, Caffeine & Culture</p>
-                <p>I'm a passionate developer with a keen interest in technology and aviation. I love building things that make a difference and sharing my knowledge through code and writing.</p>
+        <div class="about-container">
+            <!-- Profile Section -->
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="images/Profile.jpeg" alt="Prahatish Sathyamurthy">
+                </div>
+                <div class="profile-info">
+                    <h1>Prahatish Sathyamurthy</h1>
+                    <div class="social-links">
+                        <a href="https://github.com/Prahal007" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/prahatish" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/prahatish" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            
-            <div class="github-repos">
-                <h2>My GitHub Projects</h2>
+
+            <!-- Bio Section -->
+            <div class="about-section">
+                <h2><i class="fas fa-user-circle"></i> About Me</h2>
+                <p>A curious mind exploring AI, dabbling in code, obsessed with aviation, and learning as I go.</p>
+                <p>Hello! I'm Prahatish, a passionate software developer and aviation enthusiast based in India. With a strong foundation in computer science and mechanical engineering, I specialize in creating efficient, scalable solutions that make a difference.</p>
+                <p>When I'm not coding, you'll find me writing about technology, exploring the latest developments in aviation, or contributing to open-source projects. I believe in the power of technology to transform lives and am constantly learning and growing in this ever-evolving field.</p>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="skills-section">
+                <h2><i class="fas fa-laptop-code"></i> Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming Languages</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Python</li>
+                            <li><i class="fas fa-check"></i> JavaScript</li>
+                            <li><i class="fas fa-check"></i> Java</li>
+                            <li><i class="fas fa-check"></i> C++</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Web Technologies</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> HTML5 & CSS3</li>
+                            <li><i class="fas fa-check"></i> React.js</li>
+                            <li><i class="fas fa-check"></i> Node.js</li>
+                            <li><i class="fas fa-check"></i> MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Platforms</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Git & GitHub</li>
+                            <li><i class="fas fa-check"></i> Docker</li>
+                            <li><i class="fas fa-check"></i> AWS</li>
+                            <li><i class="fas fa-check"></i> Linux</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="experience-section">
+                <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Software Developer</h3>
+                            <p class="company">Tech Solutions Inc.</p>
+                            <ul>
+                                <li>Developed and maintained full-stack web applications</li>
+                                <li>Implemented RESTful APIs and microservices</li>
+                                <li>Collaborated with cross-functional teams on various projects</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <div class="timeline-content">
+                            <h3>Software Engineering Intern</h3>
+                            <p class="company">Innovation Labs</p>
+                            <ul>
+                                <li>Assisted in developing machine learning models</li>
+                                <li>Contributed to front-end development using React</li>
+                                <li>Participated in code reviews and team meetings</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Section -->
+            <div class="education-section">
+                <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+                <div class="education-item">
+                    <h3>Master of Science in Computer Science</h3>
+                    <p class="institution">University of Alabama at Birmingham</p>
+                    <p class="year">2023 - 2024</p>
+                    <p>Focusing on Advanced Computing, AI, and Software Development</p>
+                </div>
+                <div class="education-item">
+                    <h3>Bachelor of Engineering in Mechanical Engineering</h3>
+                    <p class="institution">Rajalakshmi Engineering College, Affiliated to Anna University</p>
+                    <p class="year">2014 - 2018</p>
+                    <p>Strong foundation in engineering principles, problem-solving, and analytical thinking</p>
+                </div>
+            </div>
+
+            <!-- Certifications Section -->
+            <div class="certifications-section">
+                <h2><i class="fas fa-certificate"></i> Certifications</h2>
+                <div class="certifications-grid">
+                    <div class="certification-item">
+                        <h3>AWS Certified Cloud Practitioner</h3>
+                        <p>Amazon Web Services</p>
+                        <p class="cert-date">2023</p>
+                    </div>
+                    <div class="certification-item">
+                        <h3>Full Stack Web Development</h3>
+                        <p>Udacity</p>
+                        <p class="cert-date">2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interests Section -->
+            <div class="interests-section">
+                <h2><i class="fas fa-heart"></i> Interests & Hobbies</h2>
+                <div class="interests-grid">
+                    <div class="interest-item">
+                        <i class="fas fa-plane"></i>
+                        <h3>Aviation</h3>
+                        <p>Passionate about aircraft technology and flight dynamics</p>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Open Source</h3>
+                        <p>Contributing to and learning from the open-source community</p>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-pen"></i>
+                        <h3>Technical Writing</h3>
+                        <p>Sharing knowledge through blogs and articles</p>
+                    </div>
+                    <div class="interest-item">
+                        <i class="fas fa-robot"></i>
+                        <h3>AI & ML</h3>
+                        <p>Exploring artificial intelligence and machine learning</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- GitHub Projects Section -->
+            <div class="github-section">
+                <h2><i class="fab fa-github"></i> Featured Projects</h2>
                 <div class="repo-grid">
                     <div class="repo-card">
                         <h3>Prahatish Website</h3>
-                        <p>My personal website built with HTML, CSS, and JavaScript. A showcase of my work and thoughts.</p>
+                        <p>Personal website built with modern web technologies showcasing my portfolio and blogs.</p>
                         <div class="repo-meta">
                             <span><i class="fas fa-code-branch"></i> Main</span>
                             <span><i class="fas fa-star"></i> 0</span>
                         </div>
                         <a href="https://github.com/Prahal007/Prahatish-Website" class="repo-link" target="_blank">View on GitHub</a>
                     </div>
-                    
                     <div class="repo-card">
-                        <h3>More Projects Coming Soon</h3>
-                        <p>Stay tuned for more exciting projects and contributions!</p>
+                        <h3>AI Flight Tracker</h3>
+                        <p>Real-time flight tracking system with AI-powered predictions and analytics.</p>
                         <div class="repo-meta">
-                            <span><i class="fas fa-clock"></i> Coming Soon</span>
+                            <span><i class="fas fa-code-branch"></i> Development</span>
+                            <span><i class="fas fa-star"></i> 0</span>
                         </div>
+                        <a href="#" class="repo-link" target="_blank">Coming Soon</a>
                     </div>
                 </div>
             </div>
