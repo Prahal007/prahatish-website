@@ -1,38 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://prahatishs.netlify.app/</loc>
-        <lastmod>2024-04-16</lastmod>
+        <loc>https://prahatish.com/Index.html</loc>
+        <lastmod>2024-04-18</lastmod>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://prahatishs.netlify.app/About.html</loc>
-        <lastmod>2024-04-16</lastmod>
+        <loc>https://prahatish.com/About.html</loc>
+        <lastmod>2024-04-18</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://prahatishs.netlify.app/Blogs.html</loc>
-        <lastmod>2024-04-16</lastmod>
+        <loc>https://prahatish.com/Blogs.html</loc>
+        <lastmod>2024-04-18</lastmod>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://prahatishs.netlify.app/Contact.html</loc>
-        <lastmod>2024-04-16</lastmod>
-        <priority>0.8</priority>
+        <loc>https://prahatish.com/blog4.html</loc>
+        <lastmod>2024-04-18</lastmod>
+        <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://prahatishs.netlify.app/blog1.html</loc>
+        <loc>https://prahatish.com/blog3.html</loc>
         <lastmod>2024-04-16</lastmod>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://prahatishs.netlify.app/blog2.html</loc>
-        <lastmod>2024-04-16</lastmod>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://prahatishs.netlify.app/blog3.html</loc>
-        <lastmod>2024-04-16</lastmod>
-        <priority>0.7</priority>
+        <loc>https://prahatish.com/Contact.html</loc>
+        <lastmod>2024-04-18</lastmod>
+        <priority>0.8</priority>
     </url>
 </urlset> 
