@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prahatish.com/sitemap.xml 
+Sitemap: http://localhost:8082/sitemap.xml 
