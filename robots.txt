@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prahatishs.netlify.app/sitemap.xml 
+Sitemap: https://prahatish.com/sitemap.xml 
