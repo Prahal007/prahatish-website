@@ -1,0 +1,123 @@
+<!-- Inside blog.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="BdggSzAPu0mIn9MNPAJq2wXGtP_gVF_-qY9NPUPXfdI" />
+    <title>Blogs - Prahatish Sathyamurthy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <section id="blogs">
+        <div class="blogs-container">
+            <h1>My Blogs</h1>
+            <div class="blog-grid">
+                <article class="blog-post" data-date="2024-04-14">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80&fm=jpeg" alt="AI Writing Assistant">
+                    </div>
+                    <div class="blog-content">
+                        <h2>The Algorithm's Muse: How AI is Transforming Content Writing</h2>
+                        <div class="blog-meta">
+                            <span class="date">
+                                <i class="far fa-calendar"></i>
+                                April 14, 2024
+                            </span>
+                            <span class="category">
+                                <i class="far fa-folder"></i>
+                                Technology
+                            </span>
+                        </div>
+                        <div class="blog-preview">
+                            <p class="blog-excerpt">The world of content writing is experiencing a seismic shift, and at the epicenter is artificial intelligence (AI). No longer a futuristic fantasy, AI writing tools are rapidly becoming commonplace, altering how we create, optimize, and consume content.</p>
+                            <a href="blog2.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-post" data-date="2024-04-15">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1617704548623-340376564e68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80&fm=jpeg" alt="Tesla vs Apple Innovation">
+                    </div>
+                    <div class="blog-content">
+                        <h2>Tesla vs. Apple: Who's Leading the Future of Innovation?</h2>
+                        <div class="blog-meta">
+                            <span class="date">
+                                <i class="far fa-calendar"></i>
+                                April 15, 2024
+                            </span>
+                            <span class="category">
+                                <i class="far fa-folder"></i>
+                                Technology
+                            </span>
+                        </div>
+                        <div class="blog-preview">
+                            <p class="blog-excerpt">The tech giants, Tesla and Apple, are constantly pushing the boundaries of innovation, each in their respective domains. From electric vehicles and renewable energy to groundbreaking smartphones and wearable technology, both companies have captured the public's imagination and sparked endless debate about who's truly leading the charge into the future.</p>
+                            <a href="blog1.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-post" data-date="2024-04-16">
+                    <div class="blog-image">
+                        <img src="images/Blog_3.jpeg" alt="BluSmart EV Financial Challenges">
+                    </div>
+                    <div class="blog-content">
+                        <h2>BluSmart's Turbulence: What Startup Founders Can Learn About Financial Accountability</h2>
+                        <div class="blog-meta">
+                            <span class="date">
+                                <i class="far fa-calendar"></i>
+                                April 16, 2024
+                            </span>
+                            <span class="category">
+                                <i class="far fa-folder"></i>
+                                Business & Finance
+                            </span>
+                        </div>
+                        <div class="blog-preview">
+                            <p class="blog-excerpt">The Indian electric vehicle (EV) market is buzzing with potential. Amidst growing excitement, BluSmart's recent challenges provide critical lessons about financial accountability and management for startups.</p>
+                            <a href="blog3.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="blog-post" data-date="2025-04-18">
+                    <div class="blog-image">
+                        <img src="images/Blog_4.jpeg" alt="Tesla FSD System">
+                    </div>
+                    <div class="blog-content">
+                        <h2>How Tesla Built Full Self-Driving (FSD): A Deep Dive into Vision-Based AI</h2>
+                        <div class="blog-meta">
+                            <span class="date">
+                                <i class="far fa-calendar"></i>
+                                April 18, 2025
+                            </span>
+                            <span class="category">
+                                <i class="far fa-folder"></i>
+                                Technology
+                            </span>
+                        </div>
+                        <div class="blog-preview">
+                            <p class="blog-excerpt">Tesla's Full Self-Driving (FSD) has become synonymous with the future of driving, sparking both excitement and controversy. But how does it actually work? This isn't just about adaptive cruise control or lane keeping. We're talking about a system striving for full autonomy, navigating complex real-world scenarios without human intervention.</p>
+                            <a href="blog4.html" class="read-more">Read More</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Prahatish Sathyamurthy. All rights reserved.</p>
+    </footer>
+</body>
+</html>

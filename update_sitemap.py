@@ -20,7 +20,10 @@ def update_sitemap():
     
     # Get all HTML files
     html_files = [f for f in os.listdir('.') if f.endswith('.html')]
-    today = datetime.now().strftime("%Y-%m-%d")
+    
+    # Get today's date
+    today = datetime.now()
+    lastmod_date = today.strftime('%Y-%m-%d')
     
     for html_file in html_files:
         url = ET.SubElement(urlset, "url")
@@ -31,7 +34,7 @@ def update_sitemap():
         
         # Add last modified date
         lastmod = ET.SubElement(url, "lastmod")
-        lastmod.text = today
+        lastmod.text = lastmod_date
         
         # Add priority
         priority = ET.SubElement(url, "priority")
