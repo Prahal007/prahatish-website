@@ -3,8 +3,8 @@ from datetime import datetime
 import xml.etree.ElementTree as ET
 
 def update_sitemap():
-    # Base URL of your website - using localhost for development
-    base_url = "http://localhost:8082/"
+    # Base URL of your website
+    base_url = "https://prahatishs.netlify.app/"
     
     # Create the root element
     urlset = ET.Element("urlset")
