@@ -21,7 +21,7 @@ def update_sitemap():
     # Get all HTML files
     html_files = [f for f in os.listdir('.') if f.endswith('.html')]
     
-    # Get today's date
+    # Get current date (not future date)
     today = datetime.now()
     lastmod_date = today.strftime('%Y-%m-%d')
     
